@@ -1,0 +1,31 @@
+body {
+  background-color: #1b1b1a;
+}
+
+.container {
+  top: 15%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ghost {
+  animation: float 3s ease-out infinite;
+}
+
+.eyebrow {
+  animation: rise 3s ease infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+
+@keyframes rise {
+  25% {
+    transform: translate(0, 6px);
+  }
+}
